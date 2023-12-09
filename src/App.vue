@@ -1,7 +1,6 @@
 <template>
   <div class="overflow-y-auto">
-    <div class=" grid grid-cols-5">
-
+    <div class="grid grid-cols-5">
       <div class="col-span-1">
         <sidebar />
       </div>
@@ -15,16 +14,15 @@
 </template>
 
 <script>
-import sidebar from '@/components/sidebar'
-import dashHeader from '@/components/DashHeader';
+import sidebar from "@/components/Sidebar";
+import dashHeader from "@/components/DashHeader";
 
 export default {
   components: {
     sidebar,
     dashHeader,
-  }
-
-}
+  },
+};
 </script>
 
 <style>
