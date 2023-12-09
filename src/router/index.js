@@ -15,6 +15,10 @@ import NotFound from "../views/NotFound.vue";
 const routes = [
   {
     path: "/",
+    redirect: "/admin",
+  },
+  {
+    path: "/admin",
     name: "home",
     component: HomeView,
   },

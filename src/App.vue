@@ -1,17 +1,17 @@
 <template>
   <div class="overflow-y-auto">
-    <div class="grid grid-cols-5">
-      <div class="col-span-1">
-        <sidebar />
+    <div :class="[isNotFound ? '' : 'grid grid-cols-5']">
+      <div :class="[isNotFound ? '' : 'col-span-1']">
+        <sidebar v-if="!isNotFound" />
       </div>
-
-      <div class="col-span-4">
-        <dashHeader />
+      <div :class="[isNotFound ? '' : 'col-span-4']">
+        <dashHeader v-if="!isNotFound" />
         <router-view />
       </div>
     </div>
   </div>
 </template>
+
 
 <script>
 import sidebar from "@/components/Sidebar";
@@ -21,6 +21,11 @@ export default {
   components: {
     sidebar,
     dashHeader,
+  },
+  computed: {
+    isNotFound() {
+      return this.$route.name === "NotFound";
+    },
   },
 };
 </script>
