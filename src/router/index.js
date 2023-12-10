@@ -9,7 +9,7 @@ import HomeView from "@/views/HomeView.vue";
 // import Project from "@/views/Project.vue";
 // import Service from "@/views/Service.vue";
 // import SpecialService from "@/views/SpecialService.vue";
-// import Statistic from "@/views/Statistic.vue";
+import Statistic from "@/views/Statistic.vue";
 import NotFound from "../views/NotFound.vue";
 
 const routes = [
@@ -27,11 +27,11 @@ const routes = [
     name: "HeroInfo",
     component: HeroInfo,
   },
-  // {
-  //   path: "/admin/Statistic",
-  //   name: "Statistic",
-  //   component: Statistic,
-  // },
+  {
+    path: "/admin/Statistic",
+    name: "Statistic",
+    component: Statistic,
+  },
   // {
   //   path: "/admin/SpecialService",
   //   name: "SpecialService",
