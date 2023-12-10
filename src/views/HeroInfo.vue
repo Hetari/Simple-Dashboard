@@ -1,18 +1,63 @@
 <template>
-    <div class="">
-        <heroInfoComp class="h-screen" />
+  <div class="">
+    <div class="p-6 w-full h-screen bg-[#F8F8F8]">
+      <div
+        class="bg-white rounded-lg mx-2 pr-5 pt-4 mt-28 relative z-50 shadow-md"
+      >
+        <div class="flex justify-between">
+          <!--  -->
+          <div class="flex items-start ps-1">
+            <a
+              href="#"
+              class="rounded-lg hover:bg-slate-50 hover:scale-110 transition-all duration-500"
+            >
+              <img src="@/assets/arrow-left.svg" alt="left arrow" />
+            </a>
+
+            <h1 class="capitalize text-3xl ml-3 mb-5 font-bold">hero info</h1>
+          </div>
+
+          <button
+            class="bg-[#F3AF1C] w-16 h-11 rounded-md flex items-center justify-center"
+          >
+            <img src="../assets/right-arrow.svg" alt="" />
+          </button>
+        </div>
+
+        <form class="text-lg ml-3" action="">
+          <NormalInput title="title" placeholder="TITLE..." text="title" />
+          <NormalInput
+            title="subtitle"
+            placeholder="SUBTITLE..."
+            text="subtitle"
+          />
+          <image-input />
+          <description-input />
+          <save-button />
+        </form>
+      </div>
+      <img
+        class="absolute right-0 bottom-20"
+        src="../assets/dots2.svg"
+        alt=""
+      />
     </div>
+  </div>
 </template>
 
 <script>
-import heroInfoComp from '@/components/HeroInfoComp';
-
+import NormalInput from "@/components/NormalInput.vue";
+import ImageInput from "@/components/ImageInput.vue";
+import DescriptionInput from "@/components/DescriptionInput.vue";
+import SaveButton from "@/components/SaveButton.vue";
 export default {
-    name: 'HeroInfo',
-    components: {
-        heroInfoComp,
-    }
-}
+  components: {
+    NormalInput,
+    ImageInput,
+    DescriptionInput,
+    SaveButton,
+  },
+};
 </script>
 
 <style></style>

@@ -1,6 +1,6 @@
 <template>
   <aside
-    class="min-h-screen relative bg-[#0F113C] text-white rounded-lg rounded-br-none pl-4 pt-5 shadow-sm"
+    class="min-h-screen relative bg-[#0F113C] text-white rounded-e-lg pl-4 pt-5 shadow-sm"
   >
     <img class="mt-3" src="../assets/logo.svg" alt="" />
     <div class="flex items-end">
@@ -221,7 +221,7 @@
       </li>
     </ul>
 
-    <img class="absolute left-0 bottom-0" src="../assets/dots.svg" alt="" />
+    <img class="absolute left-0 -bottom-2" src="../assets/dots.svg" alt="" />
   </aside>
 </template>
  
