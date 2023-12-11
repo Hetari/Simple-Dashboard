@@ -6,7 +6,7 @@
           <h1 class="capitalize text-3xl ml-3 mb-5 font-bold">
             list spacial service
           </h1>
-          <router-link to="/admin/Spacial-Service/add">
+          <router-link to="/admin/SpacialService/add">
             <add-button />
           </router-link>
         </div>

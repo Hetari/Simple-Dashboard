@@ -10,6 +10,7 @@ import HomeView from "@/views/HomeView.vue";
 // import Service from "@/views/Service.vue";
 import SpecialService from "@/views/SpecialService.vue";
 import Statistic from "@/views/Statistic.vue";
+import AddSpecialService from "../views/AddSpecialService.vue";
 import AddStatistic from "@/views/AddStatistic.vue";
 import NotFound from "@/views/NotFound.vue";
 
@@ -42,6 +43,11 @@ const routes = [
     path: "/admin/SpecialService",
     name: "SpecialService",
     component: SpecialService,
+  },
+  {
+    path: "/admin/SpacialService/add",
+    name: AddSpecialService,
+    component: AddSpecialService,
   },
   {
     path: "/:catchAll(.*)",
