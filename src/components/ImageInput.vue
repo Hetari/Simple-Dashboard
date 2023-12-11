@@ -6,11 +6,13 @@
         @click="pickFile"
         class="flex pl-4 w-full h-10 border border-solid rounded-lg"
       >
-        <div class="w-[25%] text-gray-400 uppercase">CHOOSE FILE</div>
+        <div class="w-[25%] text-gray-400 uppercase flex items-center">
+          <p>choose file</p>
+        </div>
         <div
-          class="w-[75%] bg-[#D9D9D9] pl-2 text-gray-400 rounded-tr-lg rounded-br-lg"
+          class="w-[75%] bg-[#D9D9D9] pl-2 text-gray-400 rounded-tr-lg rounded-br-lg flex items-center"
         >
-          {{ name }}
+          <p>{{ name }}</p>
         </div>
       </div>
       <input type="file" hidden ref="file" @change="getFileName" />
