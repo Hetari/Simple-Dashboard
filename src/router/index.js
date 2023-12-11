@@ -6,6 +6,7 @@ import { createRouter, createWebHistory } from "vue-router";
 // import Project from "@/views/Project.vue";
 // import Service from "@/views/Service.vue";
 import AboutUs from "@/views/AboutUs.vue";
+import AddAboutUs from "@/views/AddAboutUs.vue";
 import AddSpecialService from "../views/AddSpecialService.vue";
 import AddStatistic from "@/views/AddStatistic.vue";
 import HeroInfo from "@/views/HeroInfo.vue";
@@ -48,6 +49,11 @@ const routes = [
     path: "/admin/SpacialService/add",
     name: AddSpecialService,
     component: AddSpecialService,
+  },
+  {
+    path: "/admin/about-us/add",
+    name: "AddAbout",
+    component: AddAboutUs,
   },
   {
     path: "/admin/about-us",

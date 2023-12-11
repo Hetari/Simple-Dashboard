@@ -1,75 +1,72 @@
 <template>
-  <div class="">
-    <div class="p-6 w-full h-screen bg-[#F8F8F8]">
-      <div
-        class="bg-white rounded-lg mx-2 pr-5 pt-4 mt-28 relative z-50 shadow-md"
-      >
+  <div class="flex items-center justify-center">
+    <div class="p-1 h-screen w-full bg-[#F8F8F8]">
+      <div class="bg-white py-4 mx-2 pr-5 mt-28 relative z-50 shadow-lg">
         <div class="flex justify-between">
-          <!--  -->
-          <div class="flex items-start ps-1">
-            <a
-              href="#"
-              class="rounded-lg hover:bg-slate-50 hover:scale-110 transition-all duration-500"
-            >
-              <img src="@/assets/arrow-left.svg" alt="left arrow" />
-            </a>
-
-            <h1 class="capitalize text-3xl ml-3 mb-5 font-bold">
-              About us info
-            </h1>
-          </div>
-
-          <!-- <button
-            class="bg-[#F3AF1C] w-16 h-11 rounded-md flex items-center justify-center"
-          >
-            <img src="../assets/right-arrow.svg" alt="" />
-          </button> -->
+          <h1 class="capitalize text-3xl ml-3 mb-5 font-bold">about us info</h1>
+          <router-link to="/admin/about-us/add">
+            <add-button />
+          </router-link>
         </div>
-
-        <form class="text-lg ml-3" action="">
-          <NormalInput
-            text="title"
-            type="text"
-            name="home_title"
-            title="title"
-            id="home_title"
-            placeholder="TITLE..."
-          />
-          <NormalInput
-            text="subtitle"
-            type="text"
-            name="home_subtitle"
-            title="subtitle"
-            id="home_subtitle"
-            placeholder="SUBTITLE..."
-          />
-          <ImageInput file_type="Image" />
-          <DescriptionInput />
-          <SaveButton />
-        </form>
+        <div class="w-full ml-3">
+          <table class="w-full border-0">
+            <thead>
+              <tr class="border-y-2">
+                <th class="p-2 pl-0 text-start capitalize">subtitle</th>
+                <th class="p-2 text-center capitalize">description</th>
+                <th class="p-2 text-center capitalize">image</th>
+                <th class="p-2 text-center capitalize">features title</th>
+                <th class="p-2 text-center capitalize">features description</th>
+                <th class="p-2 text-end capitalize">Edit/delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b">
+                <td class="p-2 pl-0 capitalize">text</td>
+                <td class="p-2 flex justify-center">
+                  <img src="../assets/statistic.svg" alt="" />
+                </td>
+                <td class="p-2 capitalize">
+                  <img
+                    class="mx-auto"
+                    src="@/assets/special_service.svg"
+                    alt=""
+                  />
+                </td>
+                <td class="p-2 capitalize">
+                  <p class="flex justify-center">text</p>
+                </td>
+                <td class="p-2 capitalize">
+                  <p class="flex justify-center">text</p>
+                </td>
+                <td class="p-2">
+                  <div class="flex justify-end">
+                    <img class="px-6" src="../assets/edit.svg" alt="" />
+                    <img src="../assets/delete.svg" alt="" />
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
       <img
-        class="absolute right-0 bottom-20"
+        class="absolute right-0 bottom-5 z-0"
         src="../assets/dots2.svg"
         alt=""
       />
     </div>
   </div>
 </template>
-
+  
 <script>
-import NormalInput from "@/components/NormalInput.vue";
-import ImageInput from "@/components/ImageInput.vue";
-import DescriptionInput from "@/components/DescriptionInput.vue";
 import SaveButton from "@/components/SaveButton.vue";
+import AddButton from "@/components/AddButton.vue";
+
 export default {
   components: {
-    NormalInput,
-    ImageInput,
-    DescriptionInput,
     SaveButton,
+    AddButton,
   },
 };
 </script>
-
-<style></style>
