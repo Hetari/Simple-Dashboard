@@ -1,12 +1,11 @@
 
 <template>
   <div class="">
-    <div class="p-6 w-full h-screen bg-[#F8F8F8]">
+    <div class="p-1 w-full h-screen bg-[#F8F8F8]">
       <div
         class="bg-white rounded-lg mx-2 pr-5 pt-4 mt-28 relative z-50 shadow-md"
       >
         <div class="flex justify-between">
-          <!--  -->
           <div class="flex items-start ps-1">
             <a
               href="#"
