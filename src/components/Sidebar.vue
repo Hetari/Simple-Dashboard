@@ -94,7 +94,7 @@
             <router-link
               @click.prevent=""
               class="ml-9 mt-0.5 text-lg w-full"
-              to="/admin/AboutUsInfo"
+              to="/admin/About-us"
             >
               about us info</router-link
             >
