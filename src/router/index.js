@@ -8,7 +8,7 @@ import HeroInfo from "@/views/HeroInfo.vue";
 import HomeView from "@/views/HomeView.vue";
 // import Project from "@/views/Project.vue";
 // import Service from "@/views/Service.vue";
-// import SpecialService from "@/views/SpecialService.vue";
+import SpecialService from "@/views/SpecialService.vue";
 import Statistic from "@/views/Statistic.vue";
 import AddStatistic from "@/views/AddStatistic.vue";
 import NotFound from "@/views/NotFound.vue";
@@ -38,41 +38,11 @@ const routes = [
     name: "AddStatistic",
     component: AddStatistic,
   },
-  // {
-  //   path: "/admin/SpecialService",
-  //   name: "SpecialService",
-  //   component: SpecialService,
-  // },
-  // {
-  //   path: "/admin/AboutUsInfo",
-  //   name: "AboutUsInfo",
-  //   component: AboutUsInfo,
-  // },
-  // {
-  //   path: "/admin/Service",
-  //   name: "Service",
-  //   component: Service,
-  // },
-  // {
-  //   path: "/admin/Details",
-  //   name: "Details",
-  //   component: Details,
-  // },
-  // {
-  //   path: "/admin/Project",
-  //   name: "Project",
-  //   component: Project,
-  // },
-  // {
-  //   path: "/admin/Comment",
-  //   name: "Comment",
-  //   component: Comment,
-  // },
-  // {
-  //   path: "/admin/Brand",
-  //   name: "Brand",
-  //   component: Brand,
-  // },
+  {
+    path: "/admin/SpecialService",
+    name: "SpecialService",
+    component: SpecialService,
+  },
   {
     path: "/:catchAll(.*)",
     name: "NotFound",
