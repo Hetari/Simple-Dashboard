@@ -1,22 +1,23 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-// import Brand from "@/views/Brand.vue";
-// import Details from "@/views/Details.vue";
 import AboutUs from "@/views/AboutUs.vue";
 import AddAboutUs from "@/views/AddAboutUs.vue";
+import AddComment from "@/views/AddComment.vue";
 import AddDetails from "../views/AddDetails.vue";
+import AddProject from "@/views/AddProject.vue";
 import AddSpecialService from "../views/AddSpecialService.vue";
 import AddStatistic from "@/views/AddStatistic.vue";
+import Brand from "@/views/Brand.vue";
+import AddBrand from "@/views/AddBrand.vue";
 import Comment from "@/views/Comment.vue";
-import AddComment from "@/views/AddComment.vue";
 import Details from "@/views/Details.vue";
 import HeroInfo from "@/views/HeroInfo.vue";
 import HomeView from "@/views/HomeView.vue";
 import Project from "@/views/Project.vue";
-import AddProject from "@/views/AddProject.vue";
 import Service from "@/views/Service.vue";
 import SpecialService from "@/views/SpecialService.vue";
 import Statistic from "@/views/Statistic.vue";
+// 404
 import NotFound from "@/views/NotFound.vue";
 
 const routes = [
@@ -98,6 +99,16 @@ const routes = [
     path: "/admin/Comment/add",
     name: "AddComment",
     component: AddComment,
+  },
+  {
+    path: "/admin/Brand",
+    name: "Brand",
+    component: Brand,
+  },
+  {
+    path: "/admin/Brand/add",
+    name: "AddBrand",
+    component: AddBrand,
   },
   {
     path: "/:catchAll(.*)",

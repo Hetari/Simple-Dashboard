@@ -27,11 +27,7 @@
                   <img src="../assets/statistic.svg" alt="" />
                 </td>
                 <td class="p-2 capitalize">
-                  <img
-                    class="mx-auto"
-                    src="@/assets/special_service.svg"
-                    alt=""
-                  />
+                  <img class="mx-auto" src="@/assets/Mountain.svg" alt="" />
                 </td>
                 <td class="p-2 capitalize">
                   <p class="flex justify-center">text</p>

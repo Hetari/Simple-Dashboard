@@ -23,17 +23,13 @@
               </tr>
             </thead>
             <tbody>
-              <tr class="border-b">
+              <!-- <tr class="border-b">
                 <td class="p-2 pl-0 capitalize">text</td>
                 <td class="p-2 flex justify-center">
                   <img src="../assets/statistic.svg" alt="" />
                 </td>
                 <td class="p-2 capitalize">
-                  <img
-                    class="mx-auto"
-                    src="@/assets/special_service.svg"
-                    alt=""
-                  />
+                  <img class="mx-auto" src="@/assets/Mountain.svg" alt="" />
                 </td>
                 <td class="p-2 capitalize">
                   <p class="flex justify-center">text</p>
@@ -47,9 +43,12 @@
                     <img src="../assets/delete.svg" alt="" />
                   </div>
                 </td>
-              </tr>
+              </tr> -->
             </tbody>
           </table>
+          <!-- <div class="flex items-center justify-center"> -->
+          <p class="w-[100%] text-center mt-4 text-gray-400">No value add</p>
+          <!-- </div> -->
         </div>
       </div>
       <img
