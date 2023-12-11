@@ -4,7 +4,6 @@ import { createRouter, createWebHistory } from "vue-router";
 // import Comment from "@/views/Statistic.vue";
 // import Details from "@/views/Details.vue";
 // import Project from "@/views/Project.vue";
-// import Service from "@/views/Service.vue";
 import AboutUs from "@/views/AboutUs.vue";
 import AddAboutUs from "@/views/AddAboutUs.vue";
 import AddSpecialService from "../views/AddSpecialService.vue";
@@ -13,6 +12,9 @@ import HeroInfo from "@/views/HeroInfo.vue";
 import HomeView from "@/views/HomeView.vue";
 import SpecialService from "@/views/SpecialService.vue";
 import Statistic from "@/views/Statistic.vue";
+import Service from "@/views/Service.vue";
+import Details from "@/views/Details.vue";
+import AddDetails from "../views/AddDetails.vue";
 import NotFound from "@/views/NotFound.vue";
 
 const routes = [
@@ -59,6 +61,21 @@ const routes = [
     path: "/admin/about-us",
     name: "About",
     component: AboutUs,
+  },
+  {
+    path: "/admin/service",
+    name: "Service",
+    component: Service,
+  },
+  {
+    path: "/admin/Details",
+    name: "Details",
+    component: Details,
+  },
+  {
+    path: "/admin/Details/add",
+    name: "AddDetails",
+    component: AddDetails,
   },
   {
     path: "/:catchAll(.*)",

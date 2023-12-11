@@ -1,4 +1,3 @@
-
 <template>
   <div class="">
     <div class="p-1 w-full h-screen bg-[#F8F8F8]">
@@ -11,13 +10,21 @@
               href="#"
               class="rounded-lg hover:bg-slate-50 hover:scale-110 transition-all duration-500"
             >
-              <img src="@/assets/arrow-left.svg" alt="left arrow" />
+              <img
+                src="@/assets/arrow-left.svg"
+                alt="go back"
+                @click="this.$router.go(-1)"
+              />
             </a>
 
-            <h1 class="capitalize text-3xl ml-3 mb-5 font-bold">
-              About us info
-            </h1>
+            <h1 class="capitalize text-3xl ml-3 mb-5 font-bold">details</h1>
           </div>
+
+          <button
+            class="bg-[#F3AF1C] w-16 h-11 rounded-md flex items-center justify-center"
+          >
+            <img src="../assets/right-arrow.svg" alt="" />
+          </button>
         </div>
 
         <form class="text-lg ml-3" action="">
@@ -29,15 +36,7 @@
             id="home_title"
             placeholder="TITLE..."
           />
-          <NormalInput
-            text="subtitle"
-            type="text"
-            name="home_subtitle"
-            title="subtitle"
-            id="home_subtitle"
-            placeholder="SUBTITLE..."
-          />
-          <ImageInput file_type="Image" />
+          <ImageInput file_type="Icon" />
           <DescriptionInput />
           <SaveButton />
         </form>
@@ -65,3 +64,5 @@ export default {
   },
 };
 </script>
+
+<style></style>

@@ -14,9 +14,7 @@
               <img src="@/assets/arrow-left.svg" alt="left arrow" />
             </a>
 
-            <h1 class="capitalize text-3xl ml-3 mb-5 font-bold">
-              About us info
-            </h1>
+            <h1 class="capitalize text-3xl ml-3 mb-5 font-bold">service</h1>
           </div>
         </div>
 
@@ -37,7 +35,6 @@
             id="home_subtitle"
             placeholder="SUBTITLE..."
           />
-          <ImageInput file_type="Image" />
           <DescriptionInput />
           <SaveButton />
         </form>
