@@ -6,7 +6,7 @@
           <h1 class="capitalize text-3xl ml-3 mb-5 font-bold">
             list spacial service
           </h1>
-          <router-link to="/admin/Statistic/add">
+          <router-link to="/admin/Spacial-Service/add">
             <add-button />
           </router-link>
         </div>
@@ -27,6 +27,16 @@
                 <td class="p-2 pl-0 capitalize">text</td>
                 <td class="p-2 flex justify-center">
                   <img src="../assets/statistic.svg" alt="" />
+                </td>
+                <td class="p-2 capitalize">
+                  <img
+                    class="mx-auto"
+                    src="@/assets/special_service.svg"
+                    alt=""
+                  />
+                </td>
+                <td class="p-2 capitalize">
+                  <p class="flex justify-center">text</p>
                 </td>
                 <td class="p-2 capitalize">
                   <p class="flex justify-center">text</p>
