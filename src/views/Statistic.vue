@@ -6,9 +6,9 @@
           <h1 class="capitalize text-3xl ml-3 mb-5 font-bold">
             list statistic
           </h1>
-          <outer-link to="/admin/Statistic/add">
+          <router-link to="/admin/Statistic/add">
             <add-button />
-          </outer-link>
+          </router-link>
         </div>
         <div class="w-full ml-3">
           <table class="w-full border-0">

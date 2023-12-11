@@ -10,7 +10,8 @@ import HomeView from "@/views/HomeView.vue";
 // import Service from "@/views/Service.vue";
 // import SpecialService from "@/views/SpecialService.vue";
 import Statistic from "@/views/Statistic.vue";
-import NotFound from "../views/NotFound.vue";
+import AddStatistic from "@/views/AddStatistic.vue";
+import NotFound from "@/views/NotFound.vue";
 
 const routes = [
   {
@@ -31,6 +32,11 @@ const routes = [
     path: "/admin/Statistic",
     name: "Statistic",
     component: Statistic,
+  },
+  {
+    path: "/admin/Statistic/add",
+    name: "AddStatistic",
+    component: AddStatistic,
   },
   // {
   //   path: "/admin/SpecialService",

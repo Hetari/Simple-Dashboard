@@ -18,6 +18,7 @@
           </div>
 
           <button
+            @click="$router.go(-1)"
             class="bg-[#F3AF1C] w-16 h-11 rounded-md flex items-center justify-center"
           >
             <img src="../assets/right-arrow.svg" alt="" />
@@ -25,15 +26,25 @@
         </div>
 
         <form class="text-lg ml-3" action="">
-          <NormalInput title="title" placeholder="TITLE..." text="title" />
           <NormalInput
-            title="subtitle"
-            placeholder="SUBTITLE..."
-            text="subtitle"
+            text="title"
+            type="text"
+            name="home_title"
+            title="title"
+            id="home_title"
+            placeholder="TITLE..."
           />
-          <image-input />
-          <description-input />
-          <save-button />
+          <NormalInput
+            text="subtitle"
+            type="text"
+            name="home_subtitle"
+            title="subtitle"
+            id="home_subtitle"
+            placeholder="SUBTITLE..."
+          />
+          <ImageInput file_type="Image" />
+          <DescriptionInput />
+          <SaveButton />
         </form>
       </div>
       <img

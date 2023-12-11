@@ -4,8 +4,9 @@
     <div class="col-span-7 mb-5">
       <input
         class="w-full pl-4 h-10 border border-solid rounded-lg"
-        type="text"
-        :name="title"
+        :type="type"
+        :name="name"
+        :id="id"
         :placeholder="placeholder"
       />
     </div>
@@ -15,7 +16,7 @@
 <script>
 export default {
   name: "NormalInput",
-  props: ["text", "title", "placeholder"],
+  props: ["text", "name", "id", "placeholder", "type"],
   data() {
     return {};
   },
