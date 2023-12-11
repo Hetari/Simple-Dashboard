@@ -18,7 +18,6 @@
           </div>
 
           <button
-            @click="$router.go(-1)"
             class="bg-[#F3AF1C] w-16 h-11 rounded-md flex items-center justify-center"
           >
             <img src="../assets/right-arrow.svg" alt="" />
