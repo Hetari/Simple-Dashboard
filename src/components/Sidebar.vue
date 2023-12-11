@@ -43,7 +43,7 @@
             <img class="absolute -top-7" src="../assets/arrow2.svg" alt="" />
             <router-link
               @click.prevent=""
-              class="absolute text-lg w-[87%] -top-2.5 ml-9"
+              class="text-lg -translate-y-2 ml-9 w-full"
               to="/admin/Statistic"
             >
               Statistics</router-link
