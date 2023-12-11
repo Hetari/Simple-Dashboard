@@ -1,20 +1,22 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 // import Brand from "@/views/Brand.vue";
-// import Comment from "@/views/Statistic.vue";
 // import Details from "@/views/Details.vue";
-// import Project from "@/views/Project.vue";
 import AboutUs from "@/views/AboutUs.vue";
 import AddAboutUs from "@/views/AddAboutUs.vue";
+import AddDetails from "../views/AddDetails.vue";
 import AddSpecialService from "../views/AddSpecialService.vue";
 import AddStatistic from "@/views/AddStatistic.vue";
+import Comment from "@/views/Comment.vue";
+import AddComment from "@/views/AddComment.vue";
+import Details from "@/views/Details.vue";
 import HeroInfo from "@/views/HeroInfo.vue";
 import HomeView from "@/views/HomeView.vue";
+import Project from "@/views/Project.vue";
+import AddProject from "@/views/AddProject.vue";
+import Service from "@/views/Service.vue";
 import SpecialService from "@/views/SpecialService.vue";
 import Statistic from "@/views/Statistic.vue";
-import Service from "@/views/Service.vue";
-import Details from "@/views/Details.vue";
-import AddDetails from "../views/AddDetails.vue";
 import NotFound from "@/views/NotFound.vue";
 
 const routes = [
@@ -76,6 +78,26 @@ const routes = [
     path: "/admin/Details/add",
     name: "AddDetails",
     component: AddDetails,
+  },
+  {
+    path: "/admin/Project",
+    name: "Project",
+    component: Project,
+  },
+  {
+    path: "/admin/Project/add",
+    name: "AddProject",
+    component: AddProject,
+  },
+  {
+    path: "/admin/Comment",
+    name: "Comment",
+    component: Comment,
+  },
+  {
+    path: "/admin/Comment/add",
+    name: "AddComment",
+    component: AddComment,
   },
   {
     path: "/:catchAll(.*)",

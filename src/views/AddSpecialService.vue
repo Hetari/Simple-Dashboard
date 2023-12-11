@@ -25,7 +25,6 @@
           text="title"
           type="text"
           name="spacial_service_title"
-          title="title"
           id="spacial_service_title"
           placeholder="TITLE..."
         />

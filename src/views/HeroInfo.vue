@@ -19,12 +19,6 @@
 
             <h1 class="capitalize text-3xl ml-3 mb-5 font-bold">hero info</h1>
           </div>
-
-          <button
-            class="bg-[#F3AF1C] w-16 h-11 rounded-md flex items-center justify-center"
-          >
-            <img src="../assets/right-arrow.svg" alt="" />
-          </button>
         </div>
 
         <form class="text-lg ml-3" action="">
@@ -32,7 +26,6 @@
             text="title"
             type="text"
             name="home_title"
-            title="title"
             id="home_title"
             placeholder="TITLE..."
           />

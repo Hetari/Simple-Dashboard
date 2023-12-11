@@ -24,17 +24,16 @@
           <NormalInput
             text="title"
             type="text"
-            name="home_title"
-            title="title"
-            id="home_title"
+            name="about_title"
+            id="about_title"
             placeholder="TITLE..."
           />
           <NormalInput
             text="subtitle"
             type="text"
-            name="home_subtitle"
+            name="about_subtitle"
             title="subtitle"
-            id="home_subtitle"
+            id="about_subtitle"
             placeholder="SUBTITLE..."
           />
           <ImageInput file_type="Image" />

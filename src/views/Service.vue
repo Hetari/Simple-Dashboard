@@ -22,17 +22,16 @@
           <NormalInput
             text="title"
             type="text"
-            name="home_title"
-            title="title"
-            id="home_title"
+            name="service_title"
+            id="service_title"
             placeholder="TITLE..."
           />
           <NormalInput
             text="subtitle"
             type="text"
-            name="home_subtitle"
+            name="service_subtitle"
             title="subtitle"
-            id="home_subtitle"
+            id="service_subtitle"
             placeholder="SUBTITLE..."
           />
           <DescriptionInput />

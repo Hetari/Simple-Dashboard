@@ -17,25 +17,19 @@
               />
             </a>
 
-            <h1 class="capitalize text-3xl ml-3 mb-5 font-bold">details</h1>
+            <h1 class="capitalize text-3xl ml-3 mb-5 font-bold">project</h1>
           </div>
-
-          <button
-            class="bg-[#F3AF1C] w-16 h-11 rounded-md flex items-center justify-center"
-          >
-            <img src="../assets/right-arrow.svg" alt="" />
-          </button>
         </div>
 
         <form class="text-lg ml-3" action="">
           <NormalInput
             text="title"
             type="text"
-            name="project_title"
-            id="project_title"
+            name="about_title"
+            id="about_title"
             placeholder="TITLE..."
           />
-          <ImageInput file_type="Icon" />
+          <ImageInput file_type="Image" />
           <DescriptionInput />
           <SaveButton />
         </form>

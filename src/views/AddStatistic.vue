@@ -26,9 +26,8 @@
         <NormalInput
           text="title"
           type="text"
-          name="home_title"
-          title="title"
-          id="home_title"
+          name="statistic_title"
+          id="statistic_title"
           placeholder="TITLE..."
         />
         <ImageInput file_type="Icon" />
