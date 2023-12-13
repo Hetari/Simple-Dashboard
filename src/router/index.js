@@ -1,22 +1,22 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-import AboutUs from "@/views/AboutUs.vue";
-import AddAboutUs from "@/views/AddAboutUs.vue";
-import AddComment from "@/views/AddComment.vue";
-import AddDetails from "../views/AddDetails.vue";
-import AddProject from "@/views/AddProject.vue";
-import AddSpecialService from "../views/AddSpecialService.vue";
-import AddStatistic from "@/views/AddStatistic.vue";
-import Brand from "@/views/Brand.vue";
-import AddBrand from "@/views/AddBrand.vue";
-import Comment from "@/views/Comment.vue";
-import Details from "@/views/Details.vue";
-import HeroInfo from "@/views/HeroInfo.vue";
+import AboutUs from "@/views/AboutUs/AboutUs.vue";
+import AddAboutUs from "@/views/AboutUs/AddAboutUs.vue";
+import AddComment from "@/views/Comment/AddComment.vue";
+import AddDetails from "../views/Details/AddDetails.vue";
+import AddProject from "@/views/Project/AddProject.vue";
+import AddSpecialService from "../views/SpecialService/AddSpecialService.vue";
+import AddStatistic from "@/views/Statistic/AddStatistic.vue";
+import Brand from "@/views/Brand/Brand.vue";
+import AddBrand from "@/views/Brand/AddBrand.vue";
+import Comment from "@/views/Comment/Comment.vue";
+import Details from "@/views/Details/Details.vue";
+import HeroInfo from "@/views/HeroInfo/HeroInfo.vue";
 import HomeView from "@/views/HomeView.vue";
-import Project from "@/views/Project.vue";
-import Service from "@/views/Service.vue";
-import SpecialService from "@/views/SpecialService.vue";
-import Statistic from "@/views/Statistic.vue";
+import Project from "@/views/Project/Project.vue";
+import Service from "@/views/Service/Service.vue";
+import SpecialService from "@/views/SpecialService/SpecialService.vue";
+import Statistic from "@/views/Statistic/Statistic.vue";
 // 404
 import NotFound from "@/views/NotFound.vue";
 
