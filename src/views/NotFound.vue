@@ -3,7 +3,7 @@
     <div class="text-center">
       <div class="w-full max-w-sm mx-auto mb-8">
         <img
-          src="../assets/404-Page-Blog-Cover.avif"
+          src="@/assets/404-Page-Blog-Cover.avif"
           alt="404 Error"
           class="w-full h-60 object-cover"
         />

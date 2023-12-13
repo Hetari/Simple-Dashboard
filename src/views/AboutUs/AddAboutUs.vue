@@ -41,11 +41,7 @@
           <SaveButton />
         </form>
       </div>
-      <img
-        class="absolute right-0 bottom-20"
-        src="../assets/dots2.svg"
-        alt=""
-      />
+      <img class="absolute right-0 bottom-20" src="@/assets/dots2.svg" alt="" />
     </div>
   </div>
 </template>

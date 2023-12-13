@@ -24,15 +24,23 @@
               <tr class="border-b">
                 <td class="p-2 pl-0 capitalize">text</td>
                 <td class="p-2 flex justify-center">
-                  <img src="../assets/statistic.svg" alt="" />
+                  <img src="@/assets/statistic.svg" alt="" />
                 </td>
                 <td class="p-2 capitalize">
                   <p class="flex justify-center">text</p>
                 </td>
                 <td class="p-2">
                   <div class="flex justify-end">
-                    <img class="px-6" src="../assets/edit.svg" alt="" />
-                    <img src="../assets/delete.svg" alt="" />
+                    <img
+                      class="px-6 cursor-pointer"
+                      src="@/assets/edit.svg"
+                      alt=""
+                    />
+                    <img
+                      src="@/assets/delete.svg"
+                      alt="delete"
+                      class="cursor-pointer"
+                    />
                   </div>
                 </td>
               </tr>
@@ -42,7 +50,7 @@
       </div>
       <img
         class="absolute right-0 bottom-5 z-0"
-        src="../assets/dots2.svg"
+        src="@/assets/dots2.svg"
         alt=""
       />
     </div>

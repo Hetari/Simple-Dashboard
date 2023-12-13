@@ -7,7 +7,7 @@
         <button
           class="bg-[#F3AF1C] w-16 h-11 rounded-md flex items-center justify-center"
         >
-          <img src="../assets/right-arrow.svg" alt="" />
+          <img src="@/assets/right-arrow.svg" alt="" />
         </button>
       </div>
 
@@ -72,7 +72,7 @@
     </div>
     <img
       class="absolute right-0 bottom-5 z-0"
-      src="../assets/dots2.svg"
+      src="@/assets/dots2.svg"
       alt=""
     />
   </div>

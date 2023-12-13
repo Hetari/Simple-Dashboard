@@ -24,7 +24,7 @@
               <tr class="border-b">
                 <td class="p-2 pl-0 capitalize">text</td>
                 <td class="p-2 flex justify-center">
-                  <img src="../assets/statistic.svg" alt="" />
+                  <img src="@/assets/statistic.svg" alt="" />
                 </td>
                 <td class="p-2 capitalize">
                   <img class="mx-auto" src="@/assets/Mountain.svg" alt="" />
@@ -37,18 +37,28 @@
                 </td>
                 <td class="p-2">
                   <div class="flex justify-end">
-                    <img class="px-6" src="../assets/edit.svg" alt="" />
-                    <img src="../assets/delete.svg" alt="" />
+                    <img
+                      class="px-6 cursor-pointer"
+                      src="@/assets/edit.svg"
+                      alt="edit"
+                    />
+                    <img
+                      src="@/assets/delete.svg"
+                      alt="delete"
+                      class="cursor-pointer"
+                      @click="delete_flag = !delete_flag"
+                    />
                   </div>
                 </td>
               </tr>
             </tbody>
           </table>
+          <DeleteModal @closeModal="close_delete_modal" v-if="delete_flag" />
         </div>
       </div>
       <img
         class="absolute right-0 bottom-5 z-0"
-        src="../assets/dots2.svg"
+        src="@/assets/dots2.svg"
         alt=""
       />
     </div>
@@ -58,11 +68,25 @@
 <script>
 import SaveButton from "@/components/SaveButton.vue";
 import AddButton from "@/components/AddButton.vue";
+import DeleteModal from "@/components/DeleteModal.vue";
+import { ref } from "vue";
 
 export default {
   components: {
     SaveButton,
     AddButton,
+    DeleteModal,
+  },
+  setup() {
+    const delete_flag = ref(false);
+
+    const close_delete_modal = () => {
+      delete_flag.value = false;
+    };
+    return {
+      delete_flag,
+      close_delete_modal,
+    };
   },
 };
 </script>

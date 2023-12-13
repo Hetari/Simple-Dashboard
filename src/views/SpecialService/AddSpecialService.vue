@@ -45,7 +45,7 @@
     </div>
     <img
       class="absolute right-0 bottom-5 z-0"
-      src="../assets/dots2.svg"
+      src="@/assets/dots2.svg"
       alt=""
     />
   </div>

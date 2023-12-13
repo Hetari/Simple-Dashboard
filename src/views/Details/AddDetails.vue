@@ -23,7 +23,7 @@
           <button
             class="bg-[#F3AF1C] w-16 h-11 rounded-md flex items-center justify-center"
           >
-            <img src="../assets/right-arrow.svg" alt="" />
+            <img src="@/assets/right-arrow.svg" alt="" />
           </button>
         </div>
 
@@ -40,11 +40,7 @@
           <SaveButton />
         </form>
       </div>
-      <img
-        class="absolute right-0 bottom-20"
-        src="../assets/dots2.svg"
-        alt=""
-      />
+      <img class="absolute right-0 bottom-20" src="@/assets/dots2.svg" alt="" />
     </div>
   </div>
 </template>
