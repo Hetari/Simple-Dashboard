@@ -3,7 +3,7 @@
     <div class="ml-2 h-14 bg-white flex justify-between rounded-lg shadow-lg">
       <div class="relative">
         <input
-          class="ml-2 pl-12 mt-2 rounded-md w-60 h-10"
+          class="ml-2 pl-12 mt-2 rounded-md w-[50vw] h-10"
           type="text"
           name="search"
           placeholder="search..."

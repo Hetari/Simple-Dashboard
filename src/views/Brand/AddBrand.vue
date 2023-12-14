@@ -8,7 +8,7 @@
           <div class="flex items-start ps-1">
             <a
               href="#"
-              class="rounded-lg hover:bg-slate-50 hover:scale-110 transition-all duration-500"
+              class="rounded-lg hover:bg-slate-50 scale-90 hover:scale-75 transition-all duration-500 cursor-pointer"
             >
               <img
                 src="@/assets/arrow-left.svg"

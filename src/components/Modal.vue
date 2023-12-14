@@ -44,7 +44,13 @@
         </svg>
       </button>
     </div>
-    <Feature />
+    <Feature
+      @addFeature="this.count++"
+      v-for="i in count"
+      :key="i"
+      class="mb-5"
+    />
+
     <div class="flex justify-end p-4">
       <button
         class="bg-[#1C23C0FC] font-bold capitalize text-white rounded-xl px-8 py-2"
@@ -61,6 +67,11 @@ import Feature from "@/components/Feature.vue";
 
 export default {
   components: { Feature },
+  data() {
+    return {
+      count: 1,
+    };
+  },
   methods: {
     closeModal() {
       this.$emit("closeModal");

@@ -1,0 +1,14 @@
+.delete-enter-from,
+.delete-leave-to {
+    opacity: 0;
+}
+
+.delete-enter-to,
+.delete-leave-from {
+    opacity: 1;
+}
+
+.delete-enter-active,
+.delete-leave-active {
+    transition: all 0.2s ease-in;
+}

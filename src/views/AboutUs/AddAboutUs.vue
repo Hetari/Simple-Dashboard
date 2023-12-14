@@ -9,9 +9,13 @@
           <div class="flex items-start ps-1">
             <a
               href="#"
-              class="rounded-lg hover:bg-slate-50 hover:scale-110 transition-all duration-500"
+              class="rounded-lg hover:bg-slate-50 scale-90 hover:scale-75 transition-all duration-500 cursor-pointer"
             >
-              <img src="@/assets/arrow-left.svg" alt="left arrow" />
+              <img
+                src="@/assets/arrow-left.svg"
+                alt="left arrow"
+                @click="this.$router.go(-1)"
+              />
             </a>
 
             <h1 class="capitalize text-3xl ml-3 mb-5 font-bold">
@@ -28,6 +32,7 @@
             id="about_title"
             placeholder="TITLE..."
           />
+          <!-- v-model="state.title" -->
           <NormalInput
             text="subtitle"
             type="text"
@@ -51,6 +56,9 @@ import NormalInput from "@/components/NormalInput.vue";
 import ImageInput from "@/components/ImageInput.vue";
 import DescriptionInput from "@/components/DescriptionInput.vue";
 import SaveButton from "@/components/SaveButton.vue";
+
+import { reactive, computed, ref } from "vue";
+
 export default {
   components: {
     NormalInput,
@@ -58,5 +66,6 @@ export default {
     DescriptionInput,
     SaveButton,
   },
+  setup() {},
 };
 </script>

@@ -71,8 +71,6 @@
 import SaveButton from "@/components/SaveButton.vue";
 import AddButton from "@/components/AddButton.vue";
 import DeleteModal from "@/components/DeleteModal.vue";
-import { ref } from "vue";
-import { Transition } from "vue";
 
 export default {
   components: {
@@ -80,31 +78,15 @@ export default {
     AddButton,
     DeleteModal,
   },
-  setup() {
-    const delete_flag = ref(false);
-
-    const close_delete_modal = () => {
-      delete_flag.value = false;
-    };
+  data() {
     return {
-      delete_flag,
-      close_delete_modal,
+      delete_flag: false,
     };
+  },
+  methods: {
+    close_delete_modal() {
+      this.delete_flag = false;
+    },
   },
 };
 </script>
-
-<style>
-.delete-enter-from,
-.delete-leave-to {
-  opacity: 0;
-}
-.delete-enter-to,
-.delete-leave-from {
-  opacity: 1;
-}
-.delete-enter-active,
-.delete-leave-active {
-  transition: all 0.2s ease-in;
-}
-</style>

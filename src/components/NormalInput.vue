@@ -9,6 +9,8 @@
         :id="id"
         :placeholder="placeholder"
       />
+      <!-- v-model="text"
+        @input="$emit('input', text)" -->
     </div>
   </div>
 </template>
@@ -18,7 +20,9 @@ export default {
   name: "NormalInput",
   props: ["text", "name", "id", "placeholder", "type"],
   data() {
-    return {};
+    return {
+      // text: "",
+    };
   },
 };
 </script>
