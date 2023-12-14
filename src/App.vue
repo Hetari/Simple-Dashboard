@@ -29,16 +29,3 @@ export default {
   },
 };
 </script>
-
-<style>
-#app {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-aside a.router-link-exact-active {
-  color: #f3af1c;
-  border-right: solid #f3af1c 4px;
-}
-</style>

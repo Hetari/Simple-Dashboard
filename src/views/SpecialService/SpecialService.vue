@@ -1,16 +1,16 @@
 <template>
   <div class="flex items-center justify-center">
     <div class="p-1 h-screen w-full bg-[#F8F8F8]">
-      <div class="bg-white py-4 mx-2 pr-5 mt-28 relative z-50 shadow-lg">
+      <div class="bg-white p-5 mx-2 mt-10 relative z-50 shadow-lg">
         <div class="flex justify-between">
           <h1 class="capitalize text-3xl ml-3 mb-5 font-bold">
             list spacial service
           </h1>
           <router-link to="/admin/SpacialService/add">
-            <add-button />
+            <AddButton />
           </router-link>
         </div>
-        <div class="w-full ml-3">
+        <div class="w-full">
           <table class="w-full border-0">
             <thead>
               <tr class="border-y-2">
@@ -47,7 +47,9 @@
             </tbody>
           </table>
           <!-- <div class="flex items-center justify-center"> -->
-          <p class="w-[100%] text-center mt-4 text-gray-400">No value add</p>
+          <p class="w-[100%] text-center mt-4 text-gray-400">
+            No value, please add to see them
+          </p>
           <!-- </div> -->
         </div>
       </div>

@@ -2,26 +2,22 @@
   <div class="">
     <div class="p-1 w-full h-screen bg-[#F8F8F8]">
       <div
-        class="bg-white rounded-lg mx-2 pr-5 pt-4 mt-28 relative z-50 shadow-md"
+        class="bg-white rounded-lg mx-2 pr-5 pt-4 mt-10 relative z-50 shadow-md"
       >
         <div class="flex justify-between">
           <div class="flex items-start ps-1">
-            <a
-              href="#"
+            <router-link
+              to="/admin/comment/"
               class="rounded-lg hover:bg-slate-50 scale-90 hover:scale-75 transition-all duration-500 cursor-pointer"
             >
-              <img
-                src="@/assets/arrow-left.svg"
-                alt="go back"
-                @click="this.$router.go(-1)"
-              />
-            </a>
+              <img src="@/assets/arrow-left.svg" alt="go back" />
+            </router-link>
 
             <h1 class="capitalize text-3xl ml-3 mb-5 font-bold">comment</h1>
           </div>
         </div>
 
-        <form class="text-lg ml-3" action="">
+        <form class="text-lg ml-[60px]" action="">
           <NormalInput
             text="client name"
             type="text"

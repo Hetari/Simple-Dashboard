@@ -45,7 +45,8 @@
       </button>
     </div>
     <Feature
-      @addFeature="this.count++"
+      @addFeature="AddFeature"
+      @removeFeature="RemoveFeature"
       v-for="i in count"
       :key="i"
       class="mb-5"
@@ -75,6 +76,14 @@ export default {
   methods: {
     closeModal() {
       this.$emit("closeModal");
+    },
+    AddFeature() {
+      this.count++;
+    },
+    RemoveFeature() {
+      if (this.count > 1) {
+        this.count--;
+      }
     },
   },
 };

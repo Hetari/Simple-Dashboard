@@ -10,8 +10,8 @@
         +
       </p>
       <p
-        class="absolute right-5 text-3xl text-center text-[#B9B5B5] cursor-pointer w-10 h-10 rounded-e-lg bg-[#e7e7e7]"
-        @click="$emit('addFeature')"
+        class="absolute right-14 text-3xl text-center text-[#B9B5B5] cursor-pointer w-10 h-10 bg-[#e7e7e7]"
+        @click="$emit('removeFeature')"
       >
         -
       </p>

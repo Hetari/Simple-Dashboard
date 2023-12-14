@@ -1,10 +1,10 @@
 <template>
   <div class="grid grid-cols-10">
-    <div class="col-span-3 uppercase font-semibold">{{ file_type }}</div>
-    <div class="col-span-7 pb-5">
+    <div class="col-span-2 uppercase text-xl">{{ file_type }}</div>
+    <div class="col-span-8 pb-5">
       <div
         @click="pickFile"
-        class="flex pl-4 w-full h-10 border border-solid rounded-lg"
+        class="flex pl-4 w-full h-12 border border-solid rounded-lg"
       >
         <div class="w-[25%] text-gray-400 uppercase flex items-center">
           <p>choose file</p>

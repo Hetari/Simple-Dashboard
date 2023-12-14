@@ -1,9 +1,9 @@
 <template>
   <div class="grid grid-cols-10">
-    <div class="col-span-3 uppercase font-semibold">Features</div>
-    <div class="col-span-7 mb-5">
+    <div class="col-span-2 uppercase text-xl">Features</div>
+    <div class="col-span-8 mb-5">
       <div
-        class="w-full pl-4 h-10 border border-solid rounded-lg"
+        class="w-full pl-4 h-12 border border-solid rounded-lg"
         @click="toggleModal"
       >
         <p
@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import Modal from "@/components/Modal.vue";
+import Modal from "@/components/FeatureModal.vue";
 
 export default {
   components: { Modal },

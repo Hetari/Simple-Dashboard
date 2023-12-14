@@ -1,6 +1,6 @@
 <template>
   <div class="p-1 w-full bg-[#F8F8F8]">
-    <div class="bg-white rounded-lg ml-2 pr-5 pt-4 mt-28 relative z-50">
+    <div class="bg-white rounded-lg ml-2 pr-5 pt-4 mt-10 relative z-50">
       <div class="flex justify-between">
         <h1 class="capitalize text-3xl ml-3 mb-5 font-bold">hero info</h1>
 
@@ -11,7 +11,7 @@
         </button>
       </div>
 
-      <form class="text-lg ml-3" action="">
+      <form class="text-lg ml-[60px]" action="">
         <div class="grid grid-cols-10">
           <div class="col-span-3 uppercase font-semibold">title</div>
           <div class="col-span-7 mb-5">

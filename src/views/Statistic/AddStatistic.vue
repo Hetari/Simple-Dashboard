@@ -1,7 +1,7 @@
 <template>
   <div class="p-1 w-full h-screen bg-[#F8F8F8]">
     <div
-      class="bg-white rounded-lg mx-2 pr-5 pt-4 mt-28 relative z-50 shadow-lg"
+      class="bg-white rounded-lg mx-2 pr-5 pt-4 mt-10 relative z-50 shadow-lg"
     >
       <div class="flex justify-between">
         <div class="flex justify-between">
@@ -20,7 +20,7 @@
         </div>
       </div>
 
-      <form class="text-lg ml-3" action="">
+      <form class="text-lg ml-[60px]" action="">
         <NormalInput
           text="title"
           type="text"

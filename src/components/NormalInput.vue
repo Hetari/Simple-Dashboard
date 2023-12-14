@@ -1,9 +1,9 @@
 <template>
   <div class="grid grid-cols-10">
-    <div class="col-span-3 uppercase font-semibold">{{ text }}</div>
-    <div class="col-span-7 mb-5">
+    <div class="col-span-2 uppercase text-xl">{{ text }}</div>
+    <div class="col-span-8 mb-5">
       <input
-        class="w-full pl-4 h-10 border border-solid rounded-lg"
+        class="w-full h-12 pl-4 border border-solid rounded-lg"
         :type="type"
         :name="name"
         :id="id"
