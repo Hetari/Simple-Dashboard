@@ -36,12 +36,16 @@
                       src="@/assets/delete.svg"
                       alt="delete"
                       class="cursor-pointer"
+                      @click="delete_flag = !delete_flag"
                     />
                   </div>
                 </td>
               </tr>
             </tbody>
           </table>
+          <transition name="delete" appear>
+            <DeleteModal @closeModal="close_delete_modal" v-if="delete_flag" />
+          </transition>
         </div>
       </div>
       <img
@@ -56,11 +60,23 @@
 <script>
 import SaveButton from "@/components/SaveButton.vue";
 import AddButton from "@/components/AddButton.vue";
+import DeleteModal from "@/components/DeleteModal.vue";
 
 export default {
   components: {
     SaveButton,
     AddButton,
+    DeleteModal,
+  },
+  data() {
+    return {
+      delete_flag: false,
+    };
+  },
+  methods: {
+    close_delete_modal() {
+      this.delete_flag = false;
+    },
   },
 };
 </script>
