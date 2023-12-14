@@ -53,7 +53,9 @@
               </tr>
             </tbody>
           </table>
-          <DeleteModal @closeModal="close_delete_modal" v-if="delete_flag" />
+          <transition name="delete" appear>
+            <DeleteModal @closeModal="close_delete_modal" v-if="delete_flag" />
+          </transition>
         </div>
       </div>
       <img
@@ -70,6 +72,7 @@ import SaveButton from "@/components/SaveButton.vue";
 import AddButton from "@/components/AddButton.vue";
 import DeleteModal from "@/components/DeleteModal.vue";
 import { ref } from "vue";
+import { Transition } from "vue";
 
 export default {
   components: {
@@ -90,3 +93,18 @@ export default {
   },
 };
 </script>
+
+<style>
+.delete-enter-from,
+.delete-leave-to {
+  opacity: 0;
+}
+.delete-enter-to,
+.delete-leave-from {
+  opacity: 1;
+}
+.delete-enter-active,
+.delete-leave-active {
+  transition: all 0.2s ease-in;
+}
+</style>
