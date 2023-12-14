@@ -46,6 +46,11 @@ const routes = [
     component: AddStatistic,
   },
   {
+    path: "/admin/Statistic/:id",
+    name: "EditStatistic",
+    component: AddStatistic,
+  },
+  {
     path: "/admin/SpecialService",
     name: "SpecialService",
     component: SpecialService,
@@ -56,8 +61,18 @@ const routes = [
     component: AddSpecialService,
   },
   {
+    path: "/admin/SpacialService/:id",
+    name: "EditSpecialService",
+    component: AddSpecialService,
+  },
+  {
     path: "/admin/about-us/add",
     name: "AddAbout",
+    component: AddAboutUs,
+  },
+  {
+    path: "/admin/about-us/:id",
+    name: "EditAbout",
     component: AddAboutUs,
   },
   {
@@ -71,13 +86,18 @@ const routes = [
     component: Service,
   },
   {
-    path: "/admin/Details",
+    path: "/admin/Details/",
     name: "Details",
     component: Details,
   },
   {
     path: "/admin/Details/add",
     name: "AddDetails",
+    component: AddDetails,
+  },
+  {
+    path: "/admin/Details/:id",
+    name: "EditDetails",
     component: AddDetails,
   },
   {
@@ -91,6 +111,11 @@ const routes = [
     component: AddProject,
   },
   {
+    path: "/admin/Project/:id",
+    name: "EditProject",
+    component: AddProject,
+  },
+  {
     path: "/admin/Comment",
     name: "Comment",
     component: Comment,
@@ -101,6 +126,11 @@ const routes = [
     component: AddComment,
   },
   {
+    path: "/admin/Comment/:id",
+    name: "EditComment",
+    component: AddComment,
+  },
+  {
     path: "/admin/Brand",
     name: "Brand",
     component: Brand,
@@ -108,6 +138,11 @@ const routes = [
   {
     path: "/admin/Brand/add",
     name: "AddBrand",
+    component: AddBrand,
+  },
+  {
+    path: "/admin/Brand/:id",
+    name: "EditBrand",
     component: AddBrand,
   },
   {

@@ -29,11 +29,13 @@
                 </td>
                 <td class="p-2">
                   <div class="flex justify-end">
-                    <img
-                      class="px-6 cursor-pointer"
-                      src="@/assets/edit.svg"
-                      alt=""
-                    />
+                    <router-link to="/admin/details/:edit">
+                      <img
+                        class="px-6 cursor-pointer"
+                        src="@/assets/edit.svg"
+                        alt=""
+                      />
+                    </router-link>
                     <img
                       src="@/assets/delete.svg"
                       alt="delete"
