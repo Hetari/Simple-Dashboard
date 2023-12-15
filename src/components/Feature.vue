@@ -1,5 +1,7 @@
 <template>
-  <div class="px-5 grid grid-cols-10 items-center">
+  <div
+    class="relative px-5 grid grid-cols-10 items-center transition-height delay-300"
+  >
     <div class="col-span-2 uppercase font-semibold text-black">Feature</div>
     <div class="col-span-8 flex items-center">
       <input class="w-full pl-4 h-10 border border-solid rounded-lg" />
@@ -22,6 +24,3 @@
 <script>
 export default {};
 </script>
-
-<style>
-</style>

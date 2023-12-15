@@ -44,14 +44,15 @@
         </svg>
       </button>
     </div>
-    <Feature
-      @addFeature="AddFeature"
-      @removeFeature="RemoveFeature"
-      v-for="i in count"
-      :key="i"
-      class="mb-5"
-    />
-
+    <transition-group tag="div" name="features" appear>
+      <Feature
+        @addFeature="AddFeature"
+        @removeFeature="RemoveFeature"
+        v-for="i in count"
+        :key="i"
+        class="mb-5"
+      />
+    </transition-group>
     <div class="flex justify-end p-4">
       <button
         class="bg-[#1C23C0FC] font-bold capitalize text-white rounded-xl px-8 py-2"

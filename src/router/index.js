@@ -12,7 +12,7 @@ import AddBrand from "@/views/Brand/AddBrand.vue";
 import Comment from "@/views/Comment/Comment.vue";
 import Details from "@/views/Details/Details.vue";
 import HeroInfo from "@/views/HeroInfo/HeroInfo.vue";
-import HomeView from "@/views/HomeView.vue";
+import HomeView from "@/views/Home/HomeView.vue";
 import Project from "@/views/Project/Project.vue";
 import Service from "@/views/Service/Service.vue";
 import SpecialService from "@/views/SpecialService/SpecialService.vue";

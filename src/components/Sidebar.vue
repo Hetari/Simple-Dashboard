@@ -2,7 +2,9 @@
   <aside
     class="min-h-screen relative bg-[#0F113C] text-white rounded-e-lg pl-4 pt-5 shadow-sm"
   >
-    <img class="mt-3" src="@/assets/logo.svg" alt="" />
+    <router-link :to="{ name: 'Root' }">
+      <img class="mt-3" src="@/assets/logo.svg" alt="" />
+    </router-link>
     <div class="flex items-end">
       <img src="@/assets/star.svg" alt="" />
     </div>
@@ -11,7 +13,7 @@
     </div>
     <h1 class="text-3xl inline-block font-bold capitalize">Dashboard</h1>
     <ul class="ml-3 mt-[43px] capitalize">
-      <li :class="showItems['home'] ? 'mb-5' : 'mb-12'">
+      <li class="cursor-pointer" :class="showItems['home'] ? 'mb-5' : 'mb-12'">
         <a
           class="flex items-center relative"
           @click.prevent=""
@@ -22,7 +24,9 @@
             alt="Home"
             class="-translate-x-1"
           />
-          <p class="text-2xl inline-block ml-[13px]">home page</p>
+          <p class="text-2xl cursor-pointer inline-block ml-[13px]">
+            home page
+          </p>
         </a>
         <ul ref="continuer" v-if="showItems['home']" class="ml-3 pt-2">
           <li class="flex relative pb-[15px]">
@@ -59,7 +63,10 @@
         </ul>
       </li>
 
-      <li :class="showItems['special-service'] ? 'mb-5' : 'mb-12'">
+      <li
+        class="cursor-pointer"
+        :class="showItems['special-service'] ? 'mb-5' : 'mb-12'"
+      >
         <a
           class="flex items-center relative"
           @click.prevent=""
@@ -83,14 +90,17 @@
         </ul>
       </li>
 
-      <li :class="showItems['about-us'] ? 'mb-5' : 'mb-12'">
+      <li
+        class="cursor-pointer"
+        :class="showItems['about-us'] ? 'mb-5' : 'mb-12'"
+      >
         <a
           class="flex items-center relative"
           @click.prevent=""
           @click="toggleShow('about-us')"
         >
           <img src="@/assets/about-us.svg" alt="Home" class="-translate-x-2" />
-          <p class="text-2xl inline-block ml-1.5">about us</p>
+          <p class="text-2xl cursor-pointer inline-block ml-1.5">about us</p>
         </a>
 
         <ul v-if="showItems['about-us']" class="ml-3 pt-2">
@@ -110,7 +120,10 @@
         </ul>
       </li>
 
-      <li :class="showItems['latest-services'] ? 'mb-5' : 'mb-12'">
+      <li
+        class="cursor-pointer"
+        :class="showItems['latest-services'] ? 'mb-5' : 'mb-12'"
+      >
         <a
           class="flex items-center relative"
           @click.prevent=""
@@ -121,7 +134,9 @@
             alt="Home"
             class="translate-x-0"
           />
-          <p class="text-2xl inline-block ml-5">latest services</p>
+          <p class="text-2xl cursor-pointer inline-block ml-5">
+            latest services
+          </p>
         </a>
 
         <ul v-if="showItems['latest-services']" class="ml-3 pt-2">
@@ -148,7 +163,10 @@
         </ul>
       </li>
 
-      <li :class="showItems['recent-work'] ? 'mb-5' : 'mb-12'">
+      <li
+        class="cursor-pointer"
+        :class="showItems['recent-work'] ? 'mb-5' : 'mb-12'"
+      >
         <a
           class="flex items-center relative"
           @click.prevent=""
@@ -159,7 +177,9 @@
             alt="Home"
             class="-translate-x-1"
           />
-          <p class="text-2xl inline-block ml-[13px]">recent work</p>
+          <p class="text-2xl cursor-pointer inline-block ml-[13px]">
+            recent work
+          </p>
         </a>
 
         <ul v-if="showItems['recent-work']" class="ml-3 pt-2">
@@ -176,14 +196,17 @@
         </ul>
       </li>
 
-      <li :class="showItems['comment'] ? 'mb-5' : 'mb-12'">
+      <li
+        class="cursor-pointer"
+        :class="showItems['comment'] ? 'mb-5' : 'mb-12'"
+      >
         <a
           class="flex items-center relative"
           @click.prevent=""
           @click="toggleShow('comment')"
         >
           <img src="@/assets/comment.svg" alt="Home" class="-translate-x-1" />
-          <p class="text-2xl inline-block ml-[13px]">comment</p>
+          <p class="text-2xl cursor-pointer inline-block ml-[13px]">comment</p>
         </a>
 
         <ul v-if="showItems['comment']" class="ml-3 pt-2">
@@ -200,14 +223,17 @@
         </ul>
       </li>
 
-      <li :class="showItems['clients'] ? 'mb-5' : 'mb-12'">
+      <li
+        class="cursor-pointer"
+        :class="showItems['clients'] ? 'mb-5' : 'mb-12'"
+      >
         <a
           class="flex items-center relative"
           @click.prevent=""
           @click="toggleShow('clients')"
         >
           <img src="@/assets/clients.svg" alt="Home" class="-translate-x-1" />
-          <p class="text-2xl inline-block ml-[13px]">clients</p>
+          <p class="text-2xl cursor-pointer inline-block ml-[13px]">clients</p>
         </a>
 
         <ul v-if="showItems['clients']" class="ml-3 pt-2">
