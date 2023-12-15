@@ -9,12 +9,12 @@ aside a.router-link-exact-active {
     border-right: solid #f3af1c 4px;
 }
 
-.delete-enter-from,
+/* .delete-enter-from, */
 .delete-leave-to {
     opacity: 0;
 }
 
-.delete-enter-to,
+/* .delete-enter-to, */
 .delete-leave-from {
     opacity: 1;
 }
@@ -22,4 +22,66 @@ aside a.router-link-exact-active {
 .delete-enter-active,
 .delete-leave-active {
     transition: all 0.2s ease-in;
+}
+
+.delete-enter-active {
+    animation: wobble .5s ease;
+}
+
+@keyframes wobble {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(4px);
+    }
+
+    60% {
+        transform: translateX(8px);
+    }
+
+    70% {
+        transform: translateX(-8px);
+    }
+
+    80% {
+        transform: translateX(4px);
+    }
+
+    90% {
+        transform: translateX(-4px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+/* Sidebar */
+.sidebar-enter.from {
+    top: -10px;
+
+}
+
+.sidebar-enter.to {
+    top: 0;
+}
+
+.sidebar-enter-active {
+    transition: all 1s ease;
+}
+
+.sidebar-leave.from {
+    top: 0;
+}
+
+.sidebar-leave.to {
+    top: -10px;
+}
+
+.sidebar-leave-active {
+    transition: all 1s ease;
 }

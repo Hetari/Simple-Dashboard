@@ -57,9 +57,14 @@
               </tr>
             </tbody>
           </table>
+          <!-- <div
+            v-if="delete_flag"
+            class="fixed inset-0 w-full h-full bg-[rgba(0,0,0,0.5)] overflow-auto"
+          > -->
           <transition name="delete" appear>
             <DeleteModal @closeModal="close_delete_modal" v-if="delete_flag" />
           </transition>
+          <!-- </div> -->
         </div>
       </div>
       <img
