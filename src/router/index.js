@@ -23,6 +23,7 @@ import NotFound from "@/views/NotFound.vue";
 const routes = [
   {
     path: "/",
+    name: "Root",
     redirect: "/admin",
   },
   {
@@ -46,7 +47,7 @@ const routes = [
     component: AddStatistic,
   },
   {
-    path: "/admin/Statistic/:id",
+    path: "/admin/Statistic/edit/:id",
     name: "EditStatistic",
     component: AddStatistic,
   },
@@ -57,13 +58,18 @@ const routes = [
   },
   {
     path: "/admin/SpacialService/add",
-    name: AddSpecialService,
+    name: "AddSpecialService",
     component: AddSpecialService,
   },
   {
-    path: "/admin/SpacialService/:id",
+    path: "/admin/SpacialService/edit/:id",
     name: "EditSpecialService",
     component: AddSpecialService,
+  },
+  {
+    path: "/admin/about-us",
+    name: "About",
+    component: AboutUs,
   },
   {
     path: "/admin/about-us/add",
@@ -71,14 +77,9 @@ const routes = [
     component: AddAboutUs,
   },
   {
-    path: "/admin/about-us/:id",
+    path: "/admin/about-us/edit/:id",
     name: "EditAbout",
     component: AddAboutUs,
-  },
-  {
-    path: "/admin/about-us",
-    name: "About",
-    component: AboutUs,
   },
   {
     path: "/admin/service",
@@ -96,7 +97,7 @@ const routes = [
     component: AddDetails,
   },
   {
-    path: "/admin/Details/:id",
+    path: "/admin/Details/edit/:id",
     name: "EditDetails",
     component: AddDetails,
   },
@@ -111,7 +112,7 @@ const routes = [
     component: AddProject,
   },
   {
-    path: "/admin/Project/:id",
+    path: "/admin/Project/edit/:id",
     name: "EditProject",
     component: AddProject,
   },
@@ -126,7 +127,7 @@ const routes = [
     component: AddComment,
   },
   {
-    path: "/admin/Comment/:id",
+    path: "/admin/Comment/edit/:id",
     name: "EditComment",
     component: AddComment,
   },
@@ -141,7 +142,7 @@ const routes = [
     component: AddBrand,
   },
   {
-    path: "/admin/Brand/:id",
+    path: "/admin/Brand/edit/:id",
     name: "EditBrand",
     component: AddBrand,
   },

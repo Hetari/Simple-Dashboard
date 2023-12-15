@@ -7,7 +7,7 @@
         <div class="flex justify-between">
           <div class="flex items-start ps-1">
             <router-link
-              to="/admin/project/"
+              :to="{ name: 'Project' }"
               class="rounded-lg hover:bg-slate-50 scale-90 hover:scale-75 transition-all duration-500 cursor-pointer"
             >
               <img src="@/assets/arrow-left.svg" alt="go back" />

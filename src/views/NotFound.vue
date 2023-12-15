@@ -14,7 +14,7 @@
         exist.
       </p>
       <router-link
-        to="/"
+        :to="{ name: 'Root' }"
         class="inline-block px-6 py-3 text-white font-semibold bg-blue-500 rounded-md transition duration-300 hover:bg-blue-600"
       >
         Go back to Home

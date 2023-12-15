@@ -12,7 +12,7 @@
     <h1 class="text-3xl inline-block font-bold capitalize">Dashboard</h1>
 
     <ul class="ml-3 mt-[43px] capitalize">
-      <li class="mb-12">
+      <li :class="showItems['home'] ? 'mb-5' : 'mb-12'">
         <a
           class="flex items-center relative"
           @click.prevent=""
@@ -27,24 +27,34 @@
           <p class="text-2xl inline-block ml-[13px]">home page</p>
         </a>
 
-        <ul v-if="showItems['home']" class="ml-2 pt-2 mb-12">
+        <ul v-if="showItems['home']" class="ml-3 pt-2">
           <li class="flex relative pb-[15px] not-last:pb-0">
             <img class="absolute top-0" src="@/assets/arrow1.svg" alt="" />
             <router-link
               @click.prevent=""
               class="ml-9 mt-0.5 text-lg w-full"
-              to="/admin/heroInfo"
+              :class="
+                $route.name.includes({ name: 'HeroInfo' })
+                  ? 'router-link-exact-active'
+                  : ''
+              "
+              :to="{ name: 'HeroInfo' }"
             >
               hero info</router-link
             >
           </li>
 
-          <li class="flex relative not-last:pb-0">
+          <li class="flex relative">
             <img class="absolute -top-7" src="@/assets/arrow2.svg" alt="" />
             <router-link
               @click.prevent=""
               class="text-lg -translate-y-2 ml-9 w-full"
-              to="/admin/Statistic"
+              :class="
+                $route.name.includes('Statistic')
+                  ? 'router-link-exact-active'
+                  : ''
+              "
+              :to="{ name: 'Statistic' }"
             >
               Statistics</router-link
             >
@@ -52,7 +62,7 @@
         </ul>
       </li>
 
-      <li class="mb-12">
+      <li :class="showItems['special-service'] ? 'mb-5' : 'mb-12'">
         <a
           class="flex items-center relative"
           @click.prevent=""
@@ -63,13 +73,13 @@
           <p class="text-2xl inline-block w-full ml-[13px]">special service</p>
         </a>
 
-        <ul v-if="showItems['special-service']" class="ml-2 pt-2">
+        <ul v-if="showItems['special-service']" class="ml-3 pt-2">
           <li class="flex relative pb-[15px] not-last:pb-0 ]">
             <img class="absolute top-0" src="@/assets/arrow1.svg" alt="" />
             <router-link
               @click.prevent=""
               class="ml-9 mt-0.5 text-lg w-full"
-              to="/admin/SpecialService"
+              :to="{ name: 'SpecialService' }"
             >
               special service</router-link
             >
@@ -77,7 +87,7 @@
         </ul>
       </li>
 
-      <li class="mb-12">
+      <li :class="showItems['about-us'] ? 'mb-5' : 'mb-12'">
         <a
           class="flex items-center relative"
           @click.prevent=""
@@ -88,13 +98,16 @@
           <p class="text-2xl inline-block ml-[13px]">about us</p>
         </a>
 
-        <ul v-if="showItems['about-us']" class="ml-2 pt-2">
+        <ul v-if="showItems['about-us']" class="ml-3 pt-2">
           <li class="flex relative pb-[15px] not-last:pb-0">
             <img class="absolute top-0" src="@/assets/arrow1.svg" alt="" />
             <router-link
+              :class="
+                $route.name.includes('About') ? 'router-link-exact-active' : ''
+              "
               @click.prevent=""
               class="ml-9 mt-0.5 text-lg w-full"
-              to="/admin/About-us"
+              :to="{ name: 'About' }"
             >
               about us info</router-link
             >
@@ -102,7 +115,7 @@
         </ul>
       </li>
 
-      <li class="mb-12">
+      <li :class="showItems['latest-services'] ? 'mb-5' : 'mb-12'">
         <a
           class="flex items-center relative"
           @click.prevent=""
@@ -117,23 +130,23 @@
           <p class="text-2xl inline-block ml-[13px]">latest services</p>
         </a>
 
-        <ul v-if="showItems['latest-services']" class="ml-2 pt-2 mb-12">
+        <ul v-if="showItems['latest-services']" class="ml-3 pt-2">
           <li class="flex relative pb-[15px] not-last:pb-0">
             <img class="absolute top-0" src="@/assets/arrow1.svg" alt="" />
             <router-link
               @click.prevent=""
               class="ml-9 mt-0.5 text-lg w-full"
-              to="/admin/Service"
+              :to="{ name: 'Service' }"
             >
               services</router-link
             >
           </li>
-          <li class="flex relative not-last:pb-0">
+          <li class="flex relative not-last:pb-0 w-full">
             <img class="absolute -top-7" src="@/assets/arrow2.svg" alt="" />
             <router-link
               @click.prevent=""
-              class="absolute text-lg -top-2.5 ml-9 w-[87%]"
-              to="/admin/Details"
+              class="text-lg -translate-y-2 ml-9 w-full"
+              :to="{ name: 'Details' }"
             >
               details</router-link
             >
@@ -141,7 +154,7 @@
         </ul>
       </li>
 
-      <li class="mb-12">
+      <li :class="showItems['recent-work'] ? 'mb-5' : 'mb-12'">
         <a
           class="flex items-center relative"
           @click.prevent=""
@@ -156,13 +169,13 @@
           <p class="text-2xl inline-block ml-[13px]">recent work</p>
         </a>
 
-        <ul v-if="showItems['recent-work']" class="ml-2 pt-2">
+        <ul v-if="showItems['recent-work']" class="ml-3 pt-2">
           <li class="flex relative pb-[15px] not-last:pb-0">
             <img class="absolute top-0" src="@/assets/arrow1.svg" alt="" />
             <router-link
               @click.prevent=""
               class="ml-9 mt-0.5 text-lg w-full"
-              to="/admin/Project"
+              :to="{ name: 'Project' }"
             >
               project</router-link
             >
@@ -170,7 +183,7 @@
         </ul>
       </li>
 
-      <li class="mb-12">
+      <li :class="showItems['comment'] ? 'mb-5' : 'mb-12'">
         <a
           class="flex items-center relative"
           @click.prevent=""
@@ -181,13 +194,13 @@
           <p class="text-2xl inline-block ml-[13px]">comment</p>
         </a>
 
-        <ul v-if="showItems['comment']" class="ml-2 pt-2">
+        <ul v-if="showItems['comment']" class="ml-3 pt-2">
           <li class="flex relative pb-[15px] not-last:pb-0">
             <img class="absolute top-0" src="@/assets/arrow1.svg" alt="" />
             <router-link
               @click.prevent=""
               class="ml-9 mt-0.5 text-lg w-full"
-              to="/admin/Comment"
+              :to="{ name: 'Comment' }"
             >
               comment</router-link
             >
@@ -195,7 +208,7 @@
         </ul>
       </li>
 
-      <li class="mb-12">
+      <li :class="showItems['clients'] ? 'mb-5' : 'mb-12'">
         <a
           class="flex items-center relative"
           @click.prevent=""
@@ -206,13 +219,13 @@
           <p class="text-2xl inline-block ml-[13px]">clients</p>
         </a>
 
-        <ul v-if="showItems['clients']" class="ml-2 pt-2">
+        <ul v-if="showItems['clients']" class="ml-3 pt-2">
           <li class="flex relative pb-[15px] not-last:pb-0">
             <img class="absolute top-0" src="@/assets/arrow1.svg" alt="" />
             <router-link
               @click.prevent=""
               class="ml-9 mt-0.5 text-lg w-full"
-              to="/admin/Brand"
+              :to="{ name: 'Brand' }"
             >
               brand</router-link
             >
@@ -221,11 +234,15 @@
       </li>
     </ul>
 
-    <img class="absolute left-0 -bottom-2" src="@/assets/dots.svg" alt="" />
+    <img
+      class="absolute left-0 -bottom-10 overflow-hidden"
+      src="@/assets/dots.svg"
+      alt=""
+    />
   </aside>
 </template>
- 
-<script >
+
+<script>
 import { useRouter } from "vue-router";
 export default {
   name: "sidebar",

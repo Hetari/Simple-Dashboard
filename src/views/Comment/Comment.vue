@@ -1,10 +1,10 @@
 <template>
   <div class="flex items-center justify-center">
-    <div class="p-1 h-screen w-full bg-[#F8F8F8]">
+    <div class="p-1 h-[calc(100vh - 4rem)] w-full bg-[#F8F8F8]">
       <div class="bg-white p-5 mx-2 mt-10 relative z-50 shadow-lg">
         <div class="flex justify-between">
           <h1 class="capitalize text-3xl ml-3 mb-5 font-bold">comment</h1>
-          <router-link to="/admin/comment/add">
+          <router-link :to="{ name: 'AddComment' }">
             <AddButton />
           </router-link>
         </div>
@@ -35,11 +35,15 @@
                 </td>
                 <td class="p-2">
                   <div class="flex justify-end">
-                    <img
-                      class="px-6 cursor-pointer"
-                      src="@/assets/edit.svg"
-                      alt=""
-                    />
+                    <router-link
+                      :to="{ name: 'EditComment', params: { id: 123456789 } }"
+                    >
+                      <img
+                        class="px-6 cursor-pointer"
+                        src="@/assets/edit.svg"
+                        alt="edit"
+                      />
+                    </router-link>
                     <img
                       src="@/assets/delete.svg"
                       alt="delete"
@@ -57,7 +61,7 @@
         </div>
       </div>
       <img
-        class="absolute right-0 bottom-5 z-0"
+        class="absolute right-0 bottom-5 z-0 overflow-hidden"
         src="@/assets/dots2.svg"
         alt=""
       />

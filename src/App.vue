@@ -1,13 +1,11 @@
 <template>
-  <div class="overflow-y-auto">
-    <div :class="[isNotFound ? '' : 'grid grid-cols-5']">
-      <div :class="[isNotFound ? '' : 'col-span-1']">
-        <sidebar v-if="!isNotFound" />
-      </div>
-      <div :class="[isNotFound ? '' : 'col-span-4']">
-        <dashHeader v-if="!isNotFound" />
-        <router-view />
-      </div>
+  <div :class="[isNotFound ? '' : 'grid grid-cols-5']">
+    <div :class="[isNotFound ? '' : 'col-span-1']">
+      <sidebar v-if="!isNotFound" />
+    </div>
+    <div :class="[isNotFound ? '' : 'col-span-4']">
+      <dashHeader v-if="!isNotFound" />
+      <router-view />
     </div>
   </div>
 </template>

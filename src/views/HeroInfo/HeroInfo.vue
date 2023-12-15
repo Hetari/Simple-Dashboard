@@ -8,7 +8,7 @@
           <a
             class="rounded-lg hover:bg-slate-50 scale-90 hover:scale-75 transition-all duration-500 cursor-pointer"
             router-link
-            to="admin/"
+            :to="{ name: 'Home' }"
           >
             <img src="@/assets/arrow-left.svg" alt="go back" />
           </a>
