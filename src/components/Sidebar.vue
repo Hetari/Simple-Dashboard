@@ -1,6 +1,6 @@
 <template>
   <aside
-    class="min-h-screen relative bg-[#0F113C] text-white rounded-e-lg pl-4 pt-5 shadow-sm"
+    class="min-h-screen relative bg-[#0F113C] text-white rounded-e-lg pl-4 pt-5 shadow-sm overflow-hidden"
   >
     <router-link :to="{ name: 'Root' }">
       <img class="mt-3" src="@/assets/logo.svg" alt="" />

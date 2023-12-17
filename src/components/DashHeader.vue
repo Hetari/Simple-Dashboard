@@ -1,9 +1,9 @@
 <template>
   <div class="p-1 bg-[#F8F8F8] border-solid">
     <div class="ml-2 h-14 bg-white flex justify-between rounded-lg shadow">
-      <div class="relative">
+      <div class="relative flex-1 me-3">
         <input
-          class="ml-2 pl-12 mt-2 rounded-md h-10 w-[60vw] max-xl:w-[50vw] max-lg:w-[45vw] max-md:w-[30vw] max-sm:w-[20vw]"
+          class="ml-2 pl-12 mt-2 rounded-md h-10 w-full"
           type="text"
           name="search"
           placeholder="search..."

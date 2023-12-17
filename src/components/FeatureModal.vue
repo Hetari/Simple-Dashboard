@@ -45,11 +45,19 @@
       </button>
     </div>
     <transition-group tag="div" name="features" appear>
-      <Feature
+      <!-- <Feature
         @addFeature="AddFeature"
         @removeFeature="RemoveFeature"
         v-for="i in count"
         :key="i"
+        class="mb-5"
+      /> -->
+      <Feature
+        v-for="(id, index) in features"
+        :key="id"
+        :id="id"
+        @addFeature="AddFeature(index)"
+        @removeFeature="removeFeatureById(index)"
         class="mb-5"
       />
     </transition-group>
@@ -71,24 +79,22 @@ export default {
   components: { Feature },
   data() {
     return {
-      count: 1,
+      features: [1],
     };
   },
   methods: {
     closeModal() {
       this.$emit("closeModal");
     },
-    AddFeature() {
-      this.count++;
+    AddFeature(index) {
+      const id = this.features.length + 1;
+      this.features.splice(index + 1, 0, id);
     },
-    RemoveFeature() {
-      if (this.count > 1) {
-        this.count--;
+    removeFeatureById(index) {
+      if (this.features.length > 1) {
+        this.features.splice(index, 1);
       }
     },
   },
 };
 </script>
-
-<style>
-</style>
