@@ -5,7 +5,12 @@
     </div>
     <div :class="[isNotFound ? '' : 'col-span-4']">
       <dashHeader v-if="!isNotFound" />
-      <router-view />
+
+      <router-view v-slot="{ Component }">
+        <transition name="route" mode="out-in" appear>
+          <component :is="Component"> </component>
+        </transition>
+      </router-view>
     </div>
   </div>
 </template>
